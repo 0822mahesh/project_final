@@ -4,7 +4,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/django-cicd/real-estate-application
+cd /var/lib/jenkins/workspace/djangi-ci-cd/real-estate-application
 
 python manage.py makemigrations
 python manage.py migrate
@@ -12,7 +12,7 @@ python manage.py migrate
 
 echo "Migrations done"
 
-#cd /var/lib/jenkins/workspace/django-cicd/real-estate-application
+cd /var/lib/jenkins/workspace/djangi-ci-cd/real-estate-application
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
